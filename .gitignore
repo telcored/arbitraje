@@ -1,0 +1,27 @@
+# General
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secret files
+.env
+.env.*
+!.env.example
+
+# Docker
+*.log
+
+# Laravel / PHP / Node dependencies (anywhere in the tree)
+**/vendor/
+**/node_modules/
+**/public/storage
+**/public/build
+**/storage/*.key
+**/.phpunit.result.cache
+**/.phpunit.cache
+
+# Misc
+Homestead.json
+Homestead.yaml
+auth.json
