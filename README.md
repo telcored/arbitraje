@@ -29,5 +29,17 @@ Sigue estos pasos para levantar el proyecto en un entorno local:
 git clone [https://github.com/telcored/Arbitraje.git](https://github.com/telcored/Arbitraje.git)
 cd Arbitraje
 
+<img width="1884" height="814" alt="image" src="https://github.com/user-attachments/assets/8b4e5157-0ac7-4403-855b-d42501f81aaf" />
+
+<img width="1902" height="832" alt="image" src="https://github.com/user-attachments/assets/d61da0e6-3165-4810-ba6b-9beb4bb3a2c4" />
+
+<img width="1908" height="643" alt="image" src="https://github.com/user-attachments/assets/d6f5d733-8ee1-4395-a9fa-53eef0bed2d4" />
+
+<img width="1709" height="807" alt="image" src="https://github.com/user-attachments/assets/2e21ec58-bb6f-4371-97f6-4e4f3e7b187a" />
+
+<img width="1896" height="677" alt="image" src="https://github.com/user-attachments/assets/6c04eb2d-3bb4-4f6d-a1d1-fbf3af84d79b" />
+
+
+
 
 
