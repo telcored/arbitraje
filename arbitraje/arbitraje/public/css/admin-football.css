@@ -1,0 +1,113 @@
+/* Admin Dashboard Football Theme Overrides */
+
+.sb-nav-fixed #layoutSidenav #layoutSidenav_nav {
+    background: var(--stadium-black);
+    border-right: 1px solid var(--glass-border);
+}
+
+.sb-topnav.navbar {
+    background: rgba(10, 10, 10, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.sb-sidenav-dark {
+    background-color: var(--stadium-black);
+}
+
+.sb-sidenav-dark .sb-sidenav-menu .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+}
+
+.sb-sidenav-dark .sb-sidenav-menu .nav-link .sb-nav-link-icon {
+    color: var(--pitch-green);
+}
+
+.sb-sidenav-dark .sb-sidenav-menu .nav-link:hover {
+    color: var(--text-main);
+    background: var(--glass-white);
+}
+
+.small.text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.sb-sidenav-dark .sb-sidenav-menu .nav-link.active {
+    color: var(--pitch-green);
+    background: rgba(29, 185, 84, 0.1);
+}
+
+/* Cards and Tables in Admin */
+.card {
+    background: var(--stadium-gray) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: white !important;
+    border-radius: 15px !important;
+    overflow: hidden;
+}
+
+.card-header {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-bottom: 1px solid var(--glass-border) !important;
+    font-weight: 700;
+}
+
+.table {
+    color: var(--text-main) !important;
+}
+
+.table thead th {
+    border-bottom: 2px solid var(--glass-border);
+    color: var(--pitch-green);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.table td {
+    border-bottom: 1px solid var(--glass-border);
+    vertical-align: middle;
+}
+
+/* Buttons in Admin */
+.btn-primary {
+    background: var(--pitch-green) !important;
+    border: none !important;
+    color: black !important;
+    font-weight: 600 !important;
+}
+
+.btn-secondary {
+    background: var(--glass-white) !important;
+    border: 1px solid var(--glass-border) !important;
+}
+
+/* Modals */
+.modal-content {
+    background: var(--stadium-gray);
+    border: 1px solid var(--glass-border);
+    color: white;
+    border-radius: 20px;
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--glass-border);
+}
+
+/* Forms in dashboard */
+.form-control,
+.form-select {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: white !important;
+}
+
+.form-control:focus {
+    border-color: var(--pitch-green) !important;
+    box-shadow: 0 0 10px rgba(29, 185, 84, 0.2) !important;
+}

@@ -10,16 +10,20 @@
     <title>Arbitraje VAR</title>
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/all.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/common-football.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/admin-football.css') }}" rel="stylesheet" />
     @stack('style')
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="{{ route('dashboard') }}">Arbitraje VAR</a>
+        <a class="navbar-brand ps-3 fw-bold" href="{{ route('dashboard') }}">
+            <i class="fas fa-futbol me-2"></i>Arbitraje VAR
+        </a>
         <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars text-success"></i></button>
 
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto me-3 me-lg-4">
@@ -61,14 +65,13 @@
                     @yield('content')
                 </div>
             </main>
-            <footer class="py-4 bg-light mt-auto">
+            <footer class="py-4 mt-auto" style="background: rgba(0,0,0,0.2); border-top: 1px solid var(--glass-border);">
                 <div class="container-fluid px-4">
-                    <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Arbitraje VAR 2026 </div>
+                    <div class="d-flex align-items-center justify-content-between small text-muted">
+                        <div>Copyright &copy; Arbitraje VAR 2026 </div>
                         <div>
-                            <a href="https://github.com/telcored">Github</a>
-                            &middot;
-                            <a href="https://telcored.cl">Website</a>
+                            <a href="https://github.com/telcored" class="text-success text-decoration-none me-3">Github</a>
+                            <a href="https://telcored.cl" class="text-success text-decoration-none">Website</a>
                         </div>
                     </div>
                 </div>
