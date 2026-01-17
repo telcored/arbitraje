@@ -1,0 +1,202 @@
+/* Landing Page Specific Styles */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: radial-gradient(circle at top right, #1a2a1a 0%, #0a0a0a 100%);
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background-image:
+        radial-gradient(circle at 50% 50%, rgba(29, 185, 84, 0.05) 0%, transparent 50%);
+    z-index: 0;
+}
+
+/* Stadium pitch lines SVG background pattern */
+.pitch-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.nav-football {
+    background: rgba(10, 10, 10, 0.8) !important;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 15px 0;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.nav-link {
+    color: var(--text-main) !important;
+    font-weight: 600;
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: var(--referee-yellow);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.section-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--pitch-green);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(29, 185, 84, 0.2);
+}
+
+.glass-card p.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.glass-card ul.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Form Styles */
+.football-input {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 12px 20px !important;
+    transition: all 0.3s ease !important;
+}
+
+.football-input::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.football-input:focus {
+    border-color: var(--pitch-green) !important;
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.2) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+}
+
+#contact .form-label {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+#contact p {
+    color: var(--text-muted) !important;
+}
+
+/* Redesign for the contact card side */
+#contact .bg-pitch-green {
+    background: linear-gradient(135deg, #1db954 0%, #158f43 100%) !important;
+    position: relative;
+    overflow: hidden;
+    color: #000000 !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Subtle pitch lines for the green panel */
+#contact .bg-pitch-green::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.3;
+}
+
+#contact .bg-pitch-green h2 {
+    color: #000000 !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    position: relative;
+    z-index: 1;
+}
+
+#contact .bg-pitch-green p,
+#contact .bg-pitch-green span {
+    color: #000000 !important;
+    font-weight: 600 !important;
+    position: relative;
+    z-index: 1;
+}
+
+#contact .bg-pitch-green .social-icon {
+    background: #000000 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer */
+.footer-football {
+    background: #050505;
+    padding: 60px 0 30px;
+    border-top: 1px solid var(--glass-border);
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--glass-white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: var(--pitch-green);
+    color: black;
+    transform: rotate(360deg);
+}
